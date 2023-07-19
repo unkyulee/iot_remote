@@ -1,4 +1,5 @@
 #include "IR/IR.h"
+#include "GUI/GUI.h"
 
 #include <Arduino.h>
 
@@ -10,9 +11,15 @@ void setup()
 
   // IR Setup
   IR_setup();
+
+  // GUI Setup
+  GUI_setup();
 }
 void loop()
 {
   // IR loop
   IR_loop();
+
+  // GUI loop
+  GUI_loop();
 }

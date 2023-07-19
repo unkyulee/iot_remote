@@ -3,7 +3,6 @@
 
 #include <ArduinoJson.h>
 
-// config control
 void IR_setup();
 void IR_loop();
 
@@ -34,9 +33,9 @@ void IR_loop();
 #define RAW_BUFFER_LENGTH 512 // Default is 112 if DECODE_MAGIQUEST is enabled, otherwise 100.
 
 #define IR_RECEIVE_PIN 23 // D15
-#define IR_SEND_PIN 22    // D4
+#define IR_SEND_PIN 19    // D4
 #define TONE_PIN 27       // D27 25 & 26 are DAC0 and 1
-#define LED_BUILTIN 21
+#define LED_BUILTIN 26
 #define APPLICATION_PIN 16 // RX2 pin
 #define SEND_PWM_BY_TIMER  // We do not have pin restrictions for this CPU's, so lets use the hardware PWM for send carrier signal generation
 #define FLASHEND 0xFFFF    // Dummy value for platforms where FLASHEND is not defined
